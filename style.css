@@ -1,0 +1,658 @@
+/* --------------------------- */
+/* --------BASIC STUFF-------- */
+/* --------------------------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300px;
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* --------------------------- */
+/* ---CHANGEABLE COMPONENTS--- */
+/* --------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 250%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 180%;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #2ecc71;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 2%;
+}
+
+
+/* --------------------------- */
+/* ----------BUTTONS---------- */
+/* --------------------------- */
+
+
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 20px;
+}
+.btn:hover, 
+.btn:active {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.button-1:link, 
+.button-1:visited {
+    border: 2px solid #2ecc71;
+    
+}
+
+
+/* -------------------------- */
+/* ----------HEADER---------- */
+/* -------------------------- */
+
+
+header {
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))),url(hero.jpg);*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))),url(British_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    float: left;
+    height: 120px;
+    width: auto;
+    margin-top: 30px;
+}
+
+.logo-3 {
+    float: left;
+    height: 50px;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    display: none;
+}
+
+/* NAVIGATION BAR */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 35px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 4px 0;
+    color: #fff;
+    font-size: 100%;
+    text-decoration:none;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #2ecc71;  
+}
+
+/* STICKY NAVIGATION BAR */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #fff;
+    font-size: 90%;
+}
+
+.sticky .logo-3 {
+    display: block;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .main-nav {
+    margin-top: 20px;
+}
+
+/* MOBILE NAVIGATION */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 250%;
+    color: #fff;
+}
+
+/* ------------------------- */
+/* ---------SECTION--------- */
+/* ------------------------- */
+
+
+.long-copy {
+    line-height: 145%;
+    width: 72%;
+    margin-left: 14%;
+    text-align: center;
+}
+
+.head-3 {
+    margin-bottom: 18px; 
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 105%;
+    word-spacing: 2px;
+}
+
+.para {
+    line-height: 155%;
+    font-size: 90%;
+}
+
+.icon {
+    font-size: 300%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 20px;
+    display: block;
+    color: #2ecc71;
+    font-weight: 500px;
+    text-align: center;
+}
+
+
+/*----------------------*/
+/*-----HOW IT WORKS-----*/
+/*----------------------*/
+
+
+.iphone-screen {
+    height: auto;
+    width: 45%;
+}
+
+.section-steps {
+    padding-bottom: 80px;
+    background-color: #f2f2f2;
+}
+
+.steps-box:first-child {
+    margin-top: 40px;
+    text-align: right;
+    padding-right: 8%;
+}
+
+.steps-box:last-child {
+    margin-top: 90px;
+    text-align: left;
+    padding-left: 3%;
+}
+
+.work-step {
+    margin-bottom: 40px;
+}
+
+.work-step div {
+    color: #2ecc71;
+    border: 2px solid #2ecc71;
+    display: inline-block;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 175%;
+    margin-right: 20px;
+}
+
+.btn-app img {
+    width: auto;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 60px;
+}
+
+
+/*----------------*/
+/*-----CITIES-----*/
+/*----------------*/
+
+
+.section-cities {
+    margin-top: 80px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cities {
+    margin-top: 20px;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.div-cities {
+    margin-left: -13.2%;
+    margin-right: -13.2%;
+}
+
+.cities li {
+    display: block;
+    float: left;
+    width: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cities figure {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cities img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.lisbon {
+    color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.8))), url(8_lisbon.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(8_lisbon.jpg);
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.text-lisbon-1 {
+    padding-top: 150px;
+    font-size: 400%;
+    text-transform: uppercase;
+    word-spacing: 12px;
+}
+
+.text-lisbon-2 {
+    font-size: 100%;
+}
+
+.san-francisco {
+    color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.8))),  url(san_francisco.jpg) ;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),  url(san_francisco.jpg) ;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.text-san-francisco-1 {
+    padding-top: 150px;
+    font-size: 400%;
+    text-transform: uppercase;
+    word-spacing: 12px;
+}
+
+.text-san-francisco-2 {
+    font-size: 100%;
+}
+
+.berlin {
+    color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.8))), url(berlin_1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(berlin_1.jpg);
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.text-berlin-1 {
+    padding-top: 150px;
+    font-size: 400%;
+    text-transform: uppercase;
+}
+
+.text-berlin-2 {
+    font-size: 100%;
+}
+
+.london {
+    color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.8))), url(london_3.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(london_3.jpg);
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.text-london-1 {
+    padding-top: 150px;
+    font-size: 400%;
+    text-transform: uppercase;
+}
+
+.text-london-2 {
+    font-size: 100%;
+}
+
+
+/*------------------*/
+/*-----CUSTOMER-----*/
+/*------------------*/
+
+.section-customer {
+    margin-top: -60px;
+    margin-bottom: 0;
+    padding: 80px 0 0 0;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.4)),to(rgba(0, 0, 0, 0.8))), url(miami-beach3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url(miami-beach3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.div-customer {
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+
+.customer-background {
+    font-size: 100%;
+    color: white;
+}
+
+blockquote {
+    padding: 4%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -15px;
+}
+
+cite {
+    margin-top: 20px;
+    display: block; 
+}
+
+.customer {
+    border-radius: 50%;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+/*----------------------*/
+/*-----CONTACT-FORM-----*/
+/*----------------------*/
+
+.contact-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email], 
+select, 
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.map-box {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 560px;
+    z-index: 0;
+    position: relative;
+}
+
+.form-box {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    height: 560px;
+    padding-top: 80px;
+}
+
+
+/*----------------*/
+/*-----FOOTER-----*/
+/*----------------*/
+
+
+footer {
+    background-color: #000;
+    padding: 10px 60px 10px 60px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    font-size: 90%;
+    
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+    font-size: 110%;
+}
+
+.line-break:before,
+.line-break:after {
+    display: block;
+    height: 1px;
+    background-color: #444;
+    content: " ";
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin: 0;
+} 
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #aaa;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active {
+    color: #f2f2f2;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.copyright {
+    color: #ccc;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    font-size: 70%;
+}
+
+.logo-2 {
+    height: 90px;
+    margin-left: 7%;
+}
+
+/*--------------------*/
+/*-----ANIMATIONS-----*/
+/*--------------------*/
+
+.js--header-animation,
+.js--iphone-animation {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--premium-animation {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--header-animation.animated,
+.js--iphone-animation.animated {
+    opacity: 1;
+}
